@@ -1,0 +1,101 @@
+/*Find a Hike search*/
+
+.findhike-searchbar {
+  position: relative;
+}
+
+#findhike-search {
+  width: 600px;
+  height: 50px;
+  background: #fff;
+  border: 1px solid #65737e;
+  font-size: 16px;
+  color: #63717f;
+  padding-left: 10px;
+  padding-right: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.searchbar input#hike-search::-webkit-input-placeholder {
+  color: #65737e;
+}
+
+/*Search button*/
+
+#hikesearch-submit button {
+  margin: 10px 20px 20px 0;
+}
+
+/*Advanced hike search bar*/
+
+// #advanced-search {
+//   margin: 10px 0 20px 0;
+//   padding: 10px 0 10px 0;
+//   color: #292c2f;
+//   font-size: 18px;
+//   a {
+//     text-decoration: none;
+//     &:hover {
+//       color: #4caf50;
+//     }
+//   }
+// }
+
+#advanced-search-toggle .fa-minus-circle {
+  display: none;
+}
+
+#advanced-search-options {
+  height: 27em;
+  padding-bottom: 10px;
+  display: none;
+  .column {
+    margin-left: 30px;
+  }
+  li {
+    margin-bottom: 0;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+  }
+  h4 {
+    margin-bottom: 5px;
+  }
+  label {
+    display: inline-block;
+    padding: 0 0 0 10px;
+  }
+  select {
+    margin-bottom: 50px;
+  }
+}
+
+.hike-search-results {
+  h4 {
+    color: #4caf50;
+    margin-bottom: 0;
+  }
+  .column {
+    margin-left: 0;
+    padding-right: 20px;
+  }
+  .icon {
+    display: block;
+    padding-bottom: 10px;
+  }
+  img {
+    width: 100%;
+    max-height: 25%;
+    padding-bottom: 20px;
+  }
+  p {
+    margin-top: 0;
+  }
+  .fa {
+    color: #545454;
+  }
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <!-- Basic Page Needs -->
+    <meta charset='utf-8'>
+    <title>Hikes and Hops</title>
+    <meta name='description' content='Looking to grab a beer after a hike? Find brews near your favorite hikes -- or vice versa!'>
+    <meta name='author' content='Jessica Gonchar'>
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS -->
+    <link rel="stylesheet" href='./css/normalize.css'>
+    <link rel="stylesheet" href='./css/skeleton.css'>
+    <link rel='stylesheet' href='./css/main.css'>
+    <link rel='stylesheet' href='./css/home.css'>
+    <!-- Javascript -->
+    <script src='https://use.fontawesome.com/bdc75e996c.js'></script>
+    <script type='text/javascript' src='./js/jquery.min.js'></script>
+    <script type='text/javascript' src='./js/hikesnhops.js'></script>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./img/favicon_1.ico">
+  </head>
+  <body>
+    <div id='logobar'>
+      <a href='./index.html'>
+        <div class='nav-logo'>
+          <img src='./img/tinylogo.png'>
+        </div>
+      </a>
+    </div>
+    <ul id='navbar'>
+      <!-- Top banner -->
+      <li class='nav-tile'><a href='./index.html''>Home</a></li>
+      <li class='nav-tile'><a href='#'>About</a></li>
+      <li class='nav-tile dropdown'>
+        <a href='./hike_search.html' button class='dropbtn'>Find a Hike</a></button>
+        <div class='dropdown-content'>
+          <a href='#'>Most popular</a>
+          <a href='#'>Hikes near Seattle</a>
+          <a href='#'>Browse all</a>
+        </div>
+      </li>
+      <li class='nav-tile'><a href='./blog.html'>Blog</a></li>
+      <li class='nav-tile'><a href='#'>Sign in or Join</a></li>
+    </ul>
+    <!-- Splash picture -->
+    <div class='splash'>
+      <!-- Main content -->
+      <div class='hike-searchbar'>
+        <input type='search' id='hike-search' placeholder='Search for a hike or brewery by name...' />
+        <a href='#'><i class="fa fa-search fa-2x" aria-hidden="true"></i></a>
+      </div>
+    </div>
+    <div class='container'>
+      <div class='row'>
+        <div class='one-third column'>
+          <h2>Favorite winter hikes</h2>
+          <p>Just because it's cold out doesn't mean you have to stay inside. See our favorite winter hikes and some tips for staying safe and warm.
+          </p>
+          <a class='read-more-link' href='#'><button>Read more</button></a>
+        </div>
+        <div class='one-third column'>
+          <h2>What we're drinking</h2>
+          <p>Each month we feature a different brewery from the Seattle area. See this month's review of Counterbalance Brewery in Georgetown.</p>
+          <a class='read-more-link' href='#'><button>Read more</button></a>
+        </div>
+        <div class='one-third column'>
+          <h2>Recent blog posts</h2>
+          <p>The latest and greatest from Hikes and Hops. Read hike recaps, brewery reviews, and more!</p>
+          <a class='read-more-link' href='./blog.html'><button>Read more</button></a>
+        </div>
+      </div>
+    </div>
+    <footer class='footer'>
+      <div class='container'>
+        <div class='row'>
+          <div class='four columns'>
+            <h4>About Hikes and Hops</h4>
+            <p>Hikes and Hops was born to help answer the ever-elusive question after a long hike: "Want to grab a beer on the way home?" Combining a love for being outdoors with craft beers, Hikes and Hops can help pair your favorite hikes with amazing breweries -- or vice versa! <a href='#'>Read more about us here.</a></p>
+          </div>
+          <div class='six columns offset-by-two'>
+            <h4>Stay Connected</h4>
+            <p>Connect with other avid hikers and beer lovers in the Seattle area.</p>
+            <form>
+              <div class="row">
+                <div class="six columns">
+                  <label for="exampleEmailInput">Name</label>
+                  <input class="u-full-width" type="email" placeholder="Hiker Hannah" id="exampleEmailInput">
+                </div>
+                <div class="six columns">
+                  <label for="exampleEmailInput">Your email</label>
+                  <input class="u-full-width" type="email" placeholder="HikerHannah@mailbox.com" id="exampleEmailInput">
+                </div>
+              </div>
+              <a class='join-button' href='#'><button>Join Now</button></a>
+            </form>
+          </div>
+        </div>
+        <p class='footer-links'>
+          <a href='#'>ABOUT </a>
+          .
+          <a href='./blog.html'> BLOG </a>
+          ·
+          <a href='#'> HIKES </a>
+          ·
+          <a href='#'> BREWS </a>
+          ·
+          <a href='#'> CONTACT </a>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

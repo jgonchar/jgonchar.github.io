@@ -1,0 +1,66 @@
+article-header {
+  padding: 0; }
+
+.article-header a:hover {
+  color: #4caf50; }
+
+.container {
+  padding: 40px 0 20px 0; }
+
+.creds {
+  color: #5c666b; }
+  .creds a {
+    text-decoration: none;
+    color: #5c666b;
+    padding-left: 10px; }
+    .creds a:hover {
+      color: #4caf50; }
+
+.blog-text {
+  padding: 20px 0 20px 0; }
+  .blog-text img {
+    width: 100%;
+    max-height: 25%;
+    padding-bottom: 20px; }
+
+.article-column button {
+  border-radius: 3px;
+  font-size: 16px;
+  background-color: #33383b;
+  color: #ffffff;
+  border: 0;
+  padding: 15px 30px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  float: left; }
+  .article-column button:hover {
+    background-color: #5c666b; }
+
+.read-more-link {
+  overflow: auto;
+  display: block; }
+
+#blog-sidebar h4 {
+  color: #4caf50; }
+
+#popular-articles .one-half {
+  margin: 0; }
+#popular-articles img {
+  max-width: 90%; }
+  #popular-articles img:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    /* For IE8 and earlier */ }
+#popular-articles h5 {
+  margin: 0 0 0.25em;
+  line-height: 1.0;
+  vertical-align: top;
+  font-size: 20px;
+  font-weight: 500; }
+#popular-articles li {
+  list-style-type: none;
+  overflow: auto;
+  margin-bottom: 40px; }
+
+/*# sourceMappingURL=blog.css.map */

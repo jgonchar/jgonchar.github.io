@@ -1,0 +1,82 @@
+/*Landing Page Picture*/
+
+.splash {
+  height: 600px;
+  background-image: url(../img/2014-10-16-colchuck-lake.jpg);
+  background-size: 100%;
+  text-align: center;
+}
+
+.splash-heading {
+  padding-top: 347px;
+  line-height: .8;
+}
+
+/*White Row*/
+
+h2 {
+  font-size: 35px;
+  padding-top: 30px;
+}
+
+.one-third {
+  padding: 20px 0 40px 0;
+  p {
+  height: 70px;
+  }
+}
+
+/*Hike search bar*/
+.hike-searchbar {
+  position: relative;
+  padding-top: 275px;
+  color: #33383b;
+  i {
+    vertical-align: middle;
+  }
+  a {
+    color: white;
+    background-color: #33383b;
+    position: inherit;
+    padding: 17px 15px;
+    left: -60px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    &:hover {
+      background-color: #65737e;
+      color: white;
+    }
+  }
+}
+
+#hike-search {
+  width: 600px;
+  height: 50px;
+  background: #fff;
+  border: none;
+  font-size: 16px;
+  color: #33383b;
+  padding-left: 10px;
+  padding-right: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.searchbar input#hike-search::-webkit-input-placeholder {
+  color: #65737e;
+}
+
+/* Footer */
+
+.footer {
+  background-color: #33383b;
+  margin-top: 20px;
+  width: 100%;
+  padding-top: 30px;
+  overflow: hidden;
+  button {
+    border: 1px solid white;
+    font-weight: normal;
+  }
+}

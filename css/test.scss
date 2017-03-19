@@ -1,0 +1,16 @@
+$jess-color: red;
+
+#jessica {
+  font-size: 10px;
+  margin-bottom: 20px; 
+  .hair {
+    color: $jess-color;
+    font-weight: bold;
+  }
+  img {
+    min-height: 30%;
+  }
+  .eye {
+    color: $jess-color;
+  }
+}

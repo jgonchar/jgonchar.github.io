@@ -1,0 +1,67 @@
+/*Find a Hike search*/
+.findhike-searchbar {
+  position: relative; }
+
+#findhike-search {
+  width: 600px;
+  height: 50px;
+  background: #fff;
+  border: 1px solid #65737e;
+  font-size: 16px;
+  color: #63717f;
+  padding-left: 10px;
+  padding-right: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px; }
+
+.searchbar input#hike-search::-webkit-input-placeholder {
+  color: #65737e; }
+
+/*Search button*/
+#hikesearch-submit button {
+  margin: 10px 20px 20px 0; }
+
+/*Advanced hike search bar*/
+#advanced-search-toggle .fa-minus-circle {
+  display: none; }
+
+#advanced-search-options {
+  height: 27em;
+  padding-bottom: 10px;
+  display: none; }
+  #advanced-search-options .column {
+    margin-left: 30px; }
+  #advanced-search-options li {
+    margin-bottom: 0; }
+  #advanced-search-options ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 0; }
+  #advanced-search-options h4 {
+    margin-bottom: 5px; }
+  #advanced-search-options label {
+    display: inline-block;
+    padding: 0 0 0 10px; }
+  #advanced-search-options select {
+    margin-bottom: 50px; }
+
+.hike-search-results h4 {
+  color: #4caf50;
+  margin-bottom: 0; }
+.hike-search-results .column {
+  margin-left: 0;
+  padding-right: 20px; }
+.hike-search-results .icon {
+  display: block;
+  padding-bottom: 10px; }
+.hike-search-results img {
+  width: 100%;
+  max-height: 25%;
+  padding-bottom: 20px; }
+.hike-search-results p {
+  margin-top: 0; }
+.hike-search-results .fa {
+  color: #545454; }
+
+/*# sourceMappingURL=hike_search.css.map */

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Basic Page Needs -->
+    <meta charset='utf-8'>
+    <title>Search | Hikes and Hops</title>
+    <meta name='description' content='Looking to grab a beer after a hike? Find brews near your favorite hikes -- or vice versa!'>
+    <meta name='author' content='Jessica Gonchar'>
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS -->
+    <link rel="stylesheet" href='./css/normalize.css'>
+    <link rel="stylesheet" href='./css/skeleton.css'>
+    <link rel='stylesheet' href='./css/main.css'>
+    <link rel='stylesheet' href='./css/hike_search.css'>
+    <!-- Javascript -->
+    <script src='https://use.fontawesome.com/bdc75e996c.js'></script>
+    <script type='text/javascript' src='./js/jquery.min.js'></script>
+    <script type='text/javascript' src='./js/hikesnhops.js'></script>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./img/favicon_1.ico">
+  </head>
+  <body>
+    <div id='logobar'>
+      <a href='./index.html'>
+        <div class='nav-logo'>
+          <img src='./img/tinylogo.png'>
+        </div>
+      </a>
+    </div>
+    <!-- Top banner -->
+    <ul id='navbar'>
+      <li class='nav-tile'><a href='./index.html''>Home</a></li>
+      <li class='nav-tile'><a href='#'>About</a></li>
+      <li class='nav-tile dropdown'>
+        <a href='./hike_search.html' button class='dropbtn'>Find a Hike</a></button>
+        <div class='dropdown-content'>
+          <a href='#'>Most popular</a>
+          <a href='#'>Hikes near Seattle</a>
+          <a href='#'>Browse all</a>
+        </div>
+      </li>
+      <li class='nav-tile'><a href='./blog.html'>Blog</a></li>
+      <li class='nav-tile'><a href='#'>Sign in or Join</a></li>
+    </ul>
+    <div class='container'>
+      <!-- Find a hike -->
+      <h2>Find a Hike</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent porttitor sodales ipsum quis varius. Praesent et faucibus magna, quis fermentum mauris. Fusce porta tortor ac dictum ultrices. Mauris ultrices in diam vel lobortis. Morbi ac nisl dignissim, commodo ante sit amet, condimentum nunc. </p>
+      <div class='findhike-searchbar'>
+        <input type='search' id='findhike-search' placeholder='Search for a hike by name...' />
+        <div id='hikesearch-submit'>
+          <button>Search</button>
+          <a id='advanced-search-toggle' href='#'>
+            <i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i>
+            <i class="fa fa-minus-circle fa-lg" aria-hidden="true"></i>
+          Advanced search</a>
+        </div>
+      </div>
+      <div id='advanced-search-options'>
+        <hr>
+        <div class='one-third column'>
+          <h4>Features</h4>
+          <ul>
+            <li>
+              <input type='checkbox' name='features-list' value='coast' id='features_1'>
+              <label for='features_1'>Coast</label>
+            </li>
+            <li>
+              <input type='checkbox' name='features-list' value='rivers' id='features_2'>
+              <label for='features_2'>Rivers</label>
+            </li>
+            <li>
+              <input type='checkbox' name='features-list' value='lakes' id='features_3'>
+              <label for='features_3'>Lakes</label>
+            </li>
+            <li>
+              <input type='checkbox' name='features-list' value='waterfalls' id='features_4'>
+              <label for='features_4'>Waterfalls</label>
+            </li>
+            <li>
+              <input type='checkbox' name='features-list' value='meadows' id='features_5'>
+              <label for='features_5'>Meadows</label>
+            </li>
+            <li>
+              <input type='checkbox' name='features-list' value='forest' id='features_6'>
+              <label for='features_6'>Forest</label>
+            </li>
+            <li>
+              <input type='checkbox' name='features-list' value='camping' id='features_7'>
+              <label for='features_7'>Camping</label>
+              <li>
+              </li>
+              <input type='checkbox' name='features-list' value='dogs' id='features_8'>
+              <label for='features_8'>Dog-friendly</label>
+            </li>
+            <li>
+              <input type='checkbox' name='features-list' value='family' id='features_9'>
+              <label for='features_9'>Good for kids</label>
+            </li>
+          </ul>
+        </div>
+        <div class='one-third column'>
+          <h4>Mileage</h4>
+          <select name='elevation-options'>
+            <option value='0'>No limit</option>
+            <option value='3'>Under 3 miles</option>
+            <option value='8'>3-8 miles</option>
+            <option value='12'>8-12 miles</option>
+            <option value='13'>Over 12 miles</option>
+          </select>
+          <h4>Elevation</h4>
+          <select name='elevation-options'>
+            <option value='0'>No limit</option>
+            <option value='500'>Negligible: Less than 500 ft</option>
+            <option value='1500'>Minimum: 500 - 1500 ft</option>
+            <option value='3000'>Moderate: 1500 - 3000 ft</option>
+            <option value='10000'>Strenuous: More than 3000 ft</option>
+          </select>
+          <h4>Regions</h4>
+          <select name='region-options'>
+            <option value='all'>Include all regions</option>
+            <option value='central'>Central Washington</option>
+            <option value='eastern'>Eastern Washington</option>
+            <option value='n-cascades'>North Cascades</option>
+            <option value='rainier'>Mount Rainier Area</option>
+            <option value='puget'>Puget Sound and Islands</option>
+            <option value='olympic'>Olympic Peninsula</option>
+            <option value='snoqualmie'>Snoqualmie Region</option>
+            <option value='s-cascades'>South Cascades</option>
+            <option value='c-cascades'>Central Cascades</option>
+            <option value='issaquah'>Issaquah Alps</option>
+            <option value='sw'>Southwest Washington</option>
+          </select>
+        </div>
+        <div class='one-third column'>
+          <h4>Brewery</h4>
+          <div class='brewery-searchbar'>
+            <input type='search' id='brewery-search' placeholder='' />
+          </div>
+          <h4>Sort order</h4>
+          <select name='sort-options'>
+            <option value='recent-update'>Most recently updated</option>
+            <option value='hike-name'>Hike name (A-Z)</option>
+            <option value='short-distance'>Distance (shortest first)</option>
+            <option value='elevation-sort'>Elevation (lowest first)</option>
+          </select>
+        </div>
+      </div>
+      <hr>
+      <div class='hike-search-results'>
+        <h2>Search results</h2>
+        <h4>Rattlesnake Ridge</h4>
+        <p>Snoqualmie Region | North Bend</p>
+        <div class='one-third column'>
+          <a href='blog_rattlesnake.html'>
+            <img src='./img/rattlesnake.jpg'>
+          </a>
+        </div>
+        <div class='two-thirds column'>
+          <div class='icon'>
+            <i class="fa fa-map" aria-hidden="true"> </i> 4.0 miles roundtrip
+          </div>
+          <div class='icon'>
+            <i class="fa fa-map" aria-hidden="true"> </i> Elevation gain: 1160 ft. | Highest Point: 2078.0 ft.
+          </div>
+          <div class='icon'>
+            <i class="fa fa-heart" aria-hidden="true"> </i> Difficulty: Moderate
+          </div> 
+          <p>This is a fine hike on a well maintained, albeit busy trail through a cool forest with views of the Cedar River watershed, Mount Si, Mount Washington, Rattlesnake Lake and Chester Morse Lake.</p>         
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class='footer'>
+    <div class='container'>
+      <div class='row'>
+        <div class='four columns'>
+          <h4>About Hikes and Hops</h4>
+          <p>Hikes and Hops was born to help answer the ever-elusive question after a long hike: "Want to grab a beer on the way home?" Combining a love for being outdoors with craft beers, Hikes and Hops can help pair your favorite hikes with amazing breweries -- or vice versa! <a href='#'>Read more about us here.</a></p>
+        </div>
+        <div class='six columns offset-by-two'>
+          <h4>Stay Connected</h4>
+          <p>Connect with other avid hikers and beer lovers in the Seattle area.</p>
+          <form>
+            <div class="row">
+              <div class="six columns">
+                <label for="exampleEmailInput">Name</label>
+                <input class="u-full-width" type="email" placeholder="Hiker Hannah" id="exampleEmailInput">
+              </div>
+              <div class="six columns">
+                <label for="exampleEmailInput">Your email</label>
+                <input class="u-full-width" type="email" placeholder="HikerHanah@mailbox.com" id="exampleEmailInput">
+              </div>
+            </div>
+            <a class='join-button' href='#'><button>Join Now</button></a>
+          </form>
+        </div>
+      </div>
+      <p class='footer-links'>
+        <a href='#'>ABOUT </a>
+        .
+        <a href='./blog.html'> BLOG </a>
+        ·
+        <a href='#'> HIKES </a>
+        ·
+        <a href='#'> BREWS </a>
+        ·
+        <a href='#'> CONTACT </a>
+      </p>
+    </footer>
+  </body>
+</html>
