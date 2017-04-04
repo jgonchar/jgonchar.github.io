@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,GAAI;EACF,KAAK,EAAE,GAAG;;AAGZ,CAAE;EACD,MAAM,EAAE,aAAa;;AAGtB,CAAE;EACA,WAAW,EAAE,IAAI;;AAGnB,2CAA2C",
+"sources": ["about-me.scss"],
+"names": [],
+"file": "about-me.css"
+}

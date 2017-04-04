@@ -30,19 +30,6 @@
 
 /*Advanced hike search bar*/
 
-// #advanced-search {
-//   margin: 10px 0 20px 0;
-//   padding: 10px 0 10px 0;
-//   color: #292c2f;
-//   font-size: 18px;
-//   a {
-//     text-decoration: none;
-//     &:hover {
-//       color: #4caf50;
-//     }
-//   }
-// }
-
 #advanced-search-toggle .fa-minus-circle {
   display: none;
 }
@@ -74,7 +61,7 @@
   }
 }
 
-.hike-search-results {
+#hike-search-results {
   h4 {
     color: #4caf50;
     margin-bottom: 0;
@@ -82,6 +69,11 @@
   .column {
     margin-left: 0;
     padding-right: 20px;
+    min-height: 275px;
+  }
+  .two-thirds p {
+    margin-top: 10px;
+    width: 100%;
   }
   .icon {
     display: block;
@@ -98,4 +90,26 @@
   .fa {
     color: #545454;
   }
+  .page-numbers {
+    letter-spacing: 1px;
+    display: inline;
+    float: right;
+    clear: both;
+  }
+  .next-page {
+    float: left;
+    padding-right: 930px;
+    letter-spacing: 5px;
+  }
+  a {
+    font-weight: bold;
+  }
 }
+
+hr {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/*# sourceMappingURL=hike_search.css.map */

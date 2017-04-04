@@ -46,22 +46,44 @@
   #advanced-search-options select {
     margin-bottom: 50px; }
 
-.hike-search-results h4 {
+#hike-search-results h4 {
   color: #4caf50;
   margin-bottom: 0; }
-.hike-search-results .column {
+#hike-search-results .column {
   margin-left: 0;
-  padding-right: 20px; }
-.hike-search-results .icon {
+  padding-right: 20px;
+  min-height: 275px; }
+#hike-search-results .two-thirds p {
+  margin-top: 10px;
+  width: 100%; }
+#hike-search-results .icon {
   display: block;
   padding-bottom: 10px; }
-.hike-search-results img {
+#hike-search-results img {
   width: 100%;
   max-height: 25%;
   padding-bottom: 20px; }
-.hike-search-results p {
+#hike-search-results p {
   margin-top: 0; }
-.hike-search-results .fa {
+#hike-search-results .fa {
   color: #545454; }
+#hike-search-results .page-numbers {
+  letter-spacing: 1px;
+  display: inline;
+  float: right;
+  clear: both; }
+#hike-search-results .next-page {
+  float: left;
+  padding-right: 930px;
+  letter-spacing: 5px; }
+#hike-search-results a {
+  font-weight: bold; }
+
+hr {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px; }
+
+/*# sourceMappingURL=hike_search.css.map */
 
 /*# sourceMappingURL=hike_search.css.map */
